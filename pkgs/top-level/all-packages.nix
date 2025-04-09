@@ -5829,6 +5829,14 @@ with pkgs;
     jdk = jdk8;
   };
 
+  albert = callPackage ../by-name/al/albert/package.nix {
+    plugins = [ ];
+  };
+
+  albertPackages = recurseIntoAttrs (
+    callPackage ../by-name/al/albert/albert-plugins { }
+  );
+
   alan = callPackage ../development/compilers/alan { };
 
   alan_2 = callPackage ../development/compilers/alan/2.nix { };
