@@ -13528,6 +13528,12 @@
     githubId = 4032;
     name = "Kristoffer Thømt Ravneberg";
   };
+  kringkaste = {
+    email = "tom@smultronen.se";
+    github = "kringkaste";
+    githubId = "964698";
+    name = "Thomas Schulze";
+  };
   kristian-brucaj = {
     email = "kbrucaj@gmail.com";
     github = "Flameslice";
