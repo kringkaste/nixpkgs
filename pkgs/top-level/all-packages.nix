@@ -11898,6 +11898,14 @@ with pkgs;
 
   airwave = libsForQt5.callPackage ../applications/audio/airwave { };
 
+  albert = callPackage ../by-name/al/albert/package.nix {
+    plugins = [ ];
+  };
+
+  albertPackages = recurseIntoAttrs (
+    callPackage ../by-name/al/albert/albert-plugins { }
+  );
+
   amarok = libsForQt5.callPackage ../applications/audio/amarok { };
   amarok-kf5 = amarok; # for compatibility
 
